@@ -1,0 +1,732 @@
+body {
+    background-color: #FCFCFC;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    transition: all 0.2s;
+}
+
+a:hover {
+    color: var(--colorDarkgreen);
+}
+
+/* Header */
+
+.logo-title {
+    position: relative;
+    margin-right: 135px;
+}
+
+.logo-title::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/Header-icon.svg");
+    display: block;
+    top: 0;
+    left: 93px;
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 23px;
+}
+
+.navbar {
+    margin-right: 57px;
+}
+
+.navbar-menu {
+    gap: 30px;
+}
+
+.navbar-link {
+    transition: all 0.3s;
+}
+
+.navbar-link:hover {
+    color: var(--colorPrimary);
+}
+
+.header-input {
+    position: relative;
+    margin-right: 53px;
+    
+    & input {
+        width: 286px;
+        height: 45px;
+        padding-left: 17px;
+    }
+
+    & img {
+        position: absolute;
+        width: 18px;
+        top: 12px;
+        left: 248px;
+        color: #2422434D;
+    }
+}
+
+.header-icons {
+
+    & img {
+        padding: 10px 12px;
+        background-color: var(--colorPrimary);
+        border-radius: 30px;
+    }
+}
+
+/* Banner */
+
+.banner {
+    background-image: url("../img/Banner-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-inner {
+    padding-top: 54px;
+}
+
+.banner-content {
+    width: 590px;
+}
+
+.btn-exams {
+    width: 97px;
+    height: 44px;
+    padding: 12px 24px 12px 24px;
+    margin-top: 28px;
+    transition: all 0.2s;
+    border-color: #fff;
+}
+
+.btn-exams:hover {
+    background-color: #fff;
+    border-color: #fff;
+    color: var(--colorDarkgreen)
+}
+
+.btn-courses {
+    width: 141px;
+    height: 44px;
+    padding: 12px 24px 12px 24px;
+    margin-top: 28px;
+    margin-left: 32px;
+    transition: all 0.2s;
+}
+
+.btn-courses:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    transform: translateY(1px);
+}
+
+
+/* Registration */
+
+.registration {
+    padding-top: 135px;
+    padding-bottom: 47px;
+
+    /* Left part of registration */
+    & .registration-content {
+        gap: 60px;
+    
+        & p {
+            width: 543px;
+        }
+    }
+    
+    /* Right part of registration */
+    & .registration-form {
+        position: relative;
+        padding: 37px 41px 48px 39px;
+        box-shadow: 0px 0px 25px 0px #1118272E;
+
+    
+        & h2 {
+            margin-bottom: 63px;
+        }
+
+        /* Input */
+        & input {
+            width: 524px;
+            height: 60px;
+            padding-left: 17px;
+            margin-bottom: 32px;
+        }
+
+        & input::placeholder {
+            position: absolute;
+            font-weight: 400;
+            font-size: 16px;
+            color: #676767;
+        }
+
+        /* List */
+        & select {
+            width: 524px;
+            height: 60px;
+            padding-left: 72px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+        }
+
+        .chevron-down{
+            left: 528px;
+            position: absolute;
+            top: 420px;
+            z-index: 999;
+        }
+
+        & img {
+            position: absolute;
+            top: 420px;
+            left: 71px;
+            z-index: 1;
+        }
+
+        /* Button */
+        & button {
+            width: 250px;
+            height: 52px;
+            margin-top: 82px;
+            margin-left: 275px;
+            padding: 16px 80px 16px 80px;
+        }
+    }
+
+    /* Bottom of Registration */
+    & .registration-form-bottom {
+        margin-top: 132px;
+        margin-bottom: 47px;
+    }
+}
+
+
+
+/*Online courses*/
+
+.online-courses {
+    margin-top: 200px;
+}
+
+.btn-explore {
+    width: 220px;
+    height: 46px;
+    padding: 12px 24px 12px 24px;
+
+}
+
+.courses-content {
+    width: 525px;
+}
+
+.courses-text {
+    width: 432px;
+}
+
+
+/* Image sliders */
+
+.slider {
+    margin-top: 150px;
+
+    .head-name {
+        h2 {
+            font-size: 60px;
+            font-weight: 700;
+            line-height: 20px;
+            letter-spacing: -0.02em;
+            text-align: center;
+        }
+    }
+
+    /* main container */
+    .name-images {
+        flex-direction: column;
+
+
+        /* all images placement */
+
+        .image-slider {
+            gap: 38px;
+
+
+            /* container of each image */
+            .image-with-text-on {
+                width: 282px;
+                height: 302.93px;
+                border-radius: 10px 10px 10px 10px;
+                position: relative;
+
+
+                /* white span text settings  */
+
+                .image-text-span {
+                    color: var(--colorInput);
+                    font-size: 26.15px;
+                    font-weight: 500;
+                    line-height: 29.54px;
+                    text-align: left;
+                    position: absolute;
+                    bottom: 10px;
+                    left: 25px;
+                    width: 140px;
+                    height: 60px;
+                }
+
+                /* one long naming settings */
+                .long {
+                    width: 181px;
+                    height: 39px;
+                    bottom: 30px
+                }
+            }
+
+
+            /* slider images */
+
+            .first {
+                background-image: url('../img/image\ 3.svg');
+                filter: brightness(70%);
+            }
+            .second {
+                background-image: url('../img/image\ 36.svg') !important;
+            }
+            .third {
+                background-image: url('../img/image\ 37.svg');  
+                
+                .python-icon {
+                    position: absolute;
+                    right: 17px;
+                    top: 20px;
+                }
+            }
+            .fourth {
+                background-image: url('../img/Frame\ 102.svg');
+            }
+            .last1 {
+                background-image: url('../img/image\ 40.svg');                    
+            }
+            .last2 {
+                background-image: url('../img/image\ 41.svg') !important;
+            }
+        }
+    }
+
+}
+
+/*Online Exams*/
+
+.online-exams{
+    margin-top: 200px;
+}
+
+.btn-online-exams {
+    width: 220px;
+    height: 46px;
+    padding: 12px 24px 12px 24px;
+}
+
+.courses-exams {
+    width: 525px;
+}
+
+.courses-text {
+    width: 432px;
+}
+
+/* Publication */
+
+.publication {
+    margin-top: 200px;
+}
+
+.btn-publication {
+    width: 220px;
+    height: 46px;
+    padding: 12px 24px 12px 24px;
+}
+
+.publication-content {
+    width: 525px;
+}
+
+.courses-text {
+    width: 432px;
+}
+
+
+/* Worker cards part */
+
+.instructors-part {
+    margin-top: 200px;
+    
+    /* Main card div */
+    .cards-workers {
+        margin-top: 85px;
+        gap: 1px;
+    }
+
+
+    /* settings of each card */
+    .card-settings {
+        width: 311.37px;
+        height: 311.37px;
+
+        /* person round image */
+
+        .round-persons-block {
+            /* width: 56.61px;
+            height: 56.61px; */
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 34px;
+        }
+
+        h4 {
+            font-size: 22.65px;
+            font-weight: 300;
+            line-height: 27.41px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            font-size: 30.19px;
+            font-weight: bold;
+            line-height: 36.54px;
+
+        }
+
+        /* first h3 is darken than others */
+        .active {
+            color: black;
+        }
+    }
+}
+
+/* Get in Touch */
+
+.get-in-touch{
+    height: 930px;
+    background-color: #F4F9FA;
+    font-family:  Helvetica;
+}
+.inside-get{
+    align-items: center;
+}
+.text-n1{
+    padding: 56px 10px 22px 10px;
+    margin: 0 auto;
+    width: max-content;
+    font-size: 42px;
+    /*h1 text-ə aid olan css
+    burada əsas text-in yerini müəyyən etdim
+    və enini ona görə böyütdüm*/
+}
+.text-n2{
+    margin: 0 auto;
+    width: 856px;
+    line-height: 36px;
+    /*ikinci text ondan biraz balaca, o qədər də rahatdır*/
+}
+
+.info-box-get{
+    display: inline-block;
+    width: 317px;
+    height: 428px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-left: 20%;
+    margin-top: 85px;
+    /*Display: grid; -ilə yazılmış ilk sətir kodlar. Burada verilən informasiya lövhəsi,
+    bir grid formatını alır. Ümumilikdə burada 7 item(məzmun) olacaq. Onlar 2 sıra 4 cərgə olacaqlar, sonuncu cərgə isə tamamilə 7 item-in olacaq.*/
+}
+
+.item1 { grid-area: info; }
+.item2 { grid-area: content1; }
+.item3 { grid-area: call; }
+.item4 { grid-area: content2; }
+.item5 { grid-area: support; }
+.item6 { grid-area: content3;}
+.item7 { grid-area: full-close;
+    grid-column-start: 1;
+    grid-column-end: 3;}
+
+.grid-container{
+    row-gap: 18px;
+
+    grid-template-areas:
+    'info content1'
+    'call content2'
+    'support content3'
+    'full-close full-close';
+}
+
+/* Yuxarıda verilən kod artıq grid-in tamamlanmış formasıdır, beləki, gridimizin 7 item-dən ibarət olduğunu bilirik, onu 4*2 formasını verdik, və sonuncu cərgənin sadəcə bir cərgədən ibarət olduöunu da yazdıq.*/
+
+
+.info-content-box{
+    position: relative;
+    /*Bu div artıq əsas div-dir, çünki içi content-in bütün materiallarını özündə cəmləyir.
+    */
+}
+
+.form-get{
+    display: inline-block;
+    position: absolute;
+    width: 497px;
+    margin-left: 9.09%;
+    margin-top: 85px;
+}
+.form-get > input{
+    width: 497px;
+    height: 60px;
+    margin-bottom: 24px;
+padding-left: 15px;
+}
+
+.form-get > textarea{
+    height: 130px;
+    width: 497px;
+padding-left: 15px;
+padding-top: 15px;
+}
+
+.icon-color{
+    fill: #1B353D;
+}
+.icon-color-2{
+    fill: #fff;
+}
+
+.helper-textarea{
+
+font-family: Helvetica;
+    font-size: 20px;
+font-weight: 400;
+line-height: 18.21px;
+text-align: left;
+background-color: #FAFAFA;
+border-radius: 4px;
+border: 0.76px solid #0000001A;
+outline: none;
+
+/*Bu helper sırf textearea-da və input-da olan yazıları azaltmaq üçündür. Ümumən eyni properity-lərə yiyələniblər*/
+}
+
+.btn-send{
+    width: 288px;
+    height: 60px;
+    font-size: 22px;
+    line-height: 29.96px;
+}
+.btn-send-get{
+    width: 288px;
+height: 60px;
+border-radius: 5px;
+position: absolute;
+right: -20px;
+margin-top: 46px;
+}
+
+.circle{
+    width: 27.5px;
+    height: 27.5px;
+    border-radius: 35.3px;
+    background-color: rgba(112, 112, 112, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 24px;
+    margin-right: 35px;
+    margin-top: 40px;
+}
+.pointer{
+    cursor: pointer;
+}
+
+.grid-txt-pr{
+font-size: 22.04px;
+font-weight: 600;
+line-height: 30.02px;
+text-align: left;
+
+}
+.grid-txt-sc{
+
+font-size: 18px;
+font-weight: 400;
+line-height: 24.51px;
+text-align: left;
+
+}
+.margin-for-txt-pr{
+    margin: 26px 0 0 0;
+}
+.circle-sc{
+    width: 27.5px;
+    height: 27.5px;
+    border-radius: 35.3px;
+    background-color: rgba(112, 112, 112, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circles-div{
+    display: flex;
+    width: 237px;
+    height: 36px;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    margin-left: 42px;
+    margin-top: 12px;
+}
+
+.google-icon {
+    width: 18px;
+    height: 18px;
+}
+
+/*ümumən bundan əvvəl olan bütün class-dar helper class-larına aiddir, yəni ki hamısı küməkçi komponentlərdir. Əsasən xırda dizayn işlərindı istifadə olunub.*/
+
+
+/* Footer */
+
+footer{
+    height: 548px;
+    flex-direction: column;
+
+    /*Artıq burdan başlayaraq footer-in dizaynına keçid etmişəm. Ola bildiyim qədər nested css istifadə etmişəm ki, asan başa düşülsün.*/
+}
+
+.higher-part{
+    flex-direction: row;
+    padding: 5.2% 7% 0 7%;
+
+    /*Ümümən footer iki yerə bölünüb. Bu yuxarı (higher-part) və aşağı (lower-part) hissələrinə bölünüb. Yuxarıda logo, sosial şəbəkələr, address və şirkət haqqında məlumatlar toplanıb, aşağıda isə input type=text var, hansı ki e-mail üçündür. */
+
+    .logo-part{
+        width: 296px;
+
+        .logos{
+            margin-top: 32px;
+            gap: 24px;
+        }
+
+        .footer-txt{
+            line-height: 24px;
+            letter-spacing: 1px;
+            text-align: left;
+            margin-top: 21px;
+        }
+    }
+
+    
+}
+
+
+.lower-part{
+    flex-direction: column;
+
+    .powered-by{
+        width: max-content;
+        padding: 0 0 2% 7%;
+    }
+    
+    .powered-by > span{
+        line-height: 37px;
+        margin-left: 32px;
+        text-align: left;
+    }
+}
+.footer-subscribe {
+    margin: 0 auto;
+    height: max-content;
+    padding-bottom: 5%;
+
+    h3 {
+    line-height: 36px;
+    margin-bottom: 20px;
+    }
+
+    .common-input {
+    height: max-content;
+    margin: 0 auto;
+
+    input[type="text"] {
+        width: 419px;
+        height: 52px;
+        background-color: white;
+        padding-left: 10px;
+        border: none;
+        outline: none;
+    }
+
+    input::placeholder {
+        color:#3B7586;
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        text-align: left;
+    }
+
+    input[type="submit"] {
+        width: 126px;
+        height: 52px;
+        background-color: #3B7586;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    }
+}
+.about-comp{
+    width: 500px;
+    height: 176px;
+    flex-direction: row;
+
+    .address{
+        height: max-content;
+
+        .address1{
+            width: max-content;
+        }
+        .address1 > h2 {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 24px;
+            text-align: left;
+            color: white;
+        }
+        .address1 > p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+            color: white;
+        }
+        .address1:not(:first-child){
+            margin-top: 16px;
+        }
+    }
+    .company{
+        color: white;
+
+        .company-description{
+            margin-top: 24px;
+
+        }
+        .comp-links{
+            cursor: pointer;
+        }
+    }
+    
+}
+
+

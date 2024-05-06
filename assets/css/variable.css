@@ -1,0 +1,9 @@
+:root {
+    --colorPrimary: #0F756B;
+    --colorGray: #333333;
+    --colorDarkgreen: #1B353D;
+    --colorInput: #FAFAFC;
+    --colorInputBorder: #D9DCE0;
+    --fontCourses: "Poppins" sans-serif;
+    --fontBanner: "Inter" sans-serif;
+}
